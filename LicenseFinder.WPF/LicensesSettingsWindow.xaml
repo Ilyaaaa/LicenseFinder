@@ -1,0 +1,59 @@
+﻿<Window x:Class="LicenseFinder.WPF.LicensesSettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LicenseFinder.WPF"
+        mc:Ignorable="d"
+        Title="Licenses settings" Height="450" Width="500" ResizeMode="NoResize">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListBox 
+            Grid.Column="0" 
+            Grid.Row="0" 
+            ItemsSource="{Binding Apps}"
+            SelectedItem="{Binding SelectedApp}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Content="{Binding Path=Name}" 
+                            MouseLeftButtonUp="OnItemClick"
+                            FontSize="16" 
+                            Padding="6" 
+                            Width="417"
+                            Grid.Column="0"/>
+
+                        <Image 
+                            Source="Resources/delete.png" 
+                            MouseLeftButtonUp="OnItemDeleteClick"
+                            Grid.Column="1" 
+                            Margin="6"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button 
+            Command="{Binding AddAppLicenseCommand}" 
+            Grid.Column="0" 
+            Grid.Row="1" 
+            Height="40" 
+            FontSize="14"
+            Content="Add"/>
+    </Grid>
+</Window>

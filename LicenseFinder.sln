@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseFinder.WPF", "LicenseFinder.WPF\LicenseFinder.WPF.csproj", "{7D25542A-0C13-4309-8694-FD8F662D2B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseFinder.Core", "LicenseFinder.Core\LicenseFinder.Core.csproj", "{A6451AFD-ABCD-4524-841A-4FE03FFD052C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D25542A-0C13-4309-8694-FD8F662D2B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D25542A-0C13-4309-8694-FD8F662D2B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D25542A-0C13-4309-8694-FD8F662D2B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D25542A-0C13-4309-8694-FD8F662D2B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6451AFD-ABCD-4524-841A-4FE03FFD052C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6451AFD-ABCD-4524-841A-4FE03FFD052C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6451AFD-ABCD-4524-841A-4FE03FFD052C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6451AFD-ABCD-4524-841A-4FE03FFD052C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ED5963F-2AD5-4A0A-BAA9-DB5BDC6DE072}
+	EndGlobalSection
+EndGlobal
